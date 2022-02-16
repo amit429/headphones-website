@@ -1,0 +1,239 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3rem;
+  /*========== Colors ==========*/
+  --hue-color: 206;
+  --black-color: hsl(var(--hue-color), 4%, 4%);
+  --black-color-alt: hsl(var(--hue-color), 4%, 8%);
+  --title-color: hsl(var(--hue-color), 4%, 95%);
+  --text-color: hsl(var(--hue-color), 4%, 75%);
+  --text-color-light: hsl(var(--hue-color), 4%, 65%);
+  --white-color: #FFF;
+  --body-color: hsl(var(--hue-color), 4%, 6%);
+  --container-color: hsl(var(--hue-color), 4%, 10%);
+  --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
+  --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+  --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 5rem;
+  --bigger-font-size: 3.5rem;
+  --big-font-size: 2.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --text-line-height: 2rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== Margenes Bottom ==========*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 7.5rem;
+    --bigger-font-size: 4.5rem;
+    --big-font-size: 4rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+body,html{
+  height: 100%;
+    background-color: var(--black-color);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('https://www.hellomagazine.com/imagenes/homes/20201120101293/best-black-friday-headphones-earphones-deals/0-485-684/beats-studio3-z.jpg');
+    background-color: black;
+
+
+  height: 100%; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:auto;
+  min-height: 100%;
+    position: relative;
+    opacity: 0.8;
+}
+
+.rotate {
+   transform: rotate(180deg);
+}
+
+.vertical{
+     display: grid;
+  height: 10vh;
+  justify-content: flex-start;
+    margin-left: 80px;
+  align-content: center;
+    
+  grid-template-columns: max-content max-content;
+}
+
+.vertical1{
+     display: grid;
+  height: 10vh;
+  justify-content: flex-end;
+    margin-left: 80px;
+  align-content: center;
+    
+  grid-template-columns: max-content max-content;
+}
+
+.vertical1 h2{
+    font-size: 100px;
+  margin: 0;
+   writing-mode: vertical-lr;
+  text-align:end;
+    color: white;
+    padding: 10px;
+  line-height: .9;
+    
+}
+
+
+.vertical h2{
+    font-size: 100px;
+  margin: 0;
+   writing-mode: vertical-lr;
+  text-align:end;
+    color: white;
+    padding: 10px;
+  line-height: .9;
+}
+
+
+.parallax img{
+    justify-content: center;
+    display: flex;
+    margin-left: 660px;
+    padding: 30px; 
+    padding-top: 200px;
+    
+}
+
+
+.parallax1{
+     background-image: url('https://i.pcmag.com/imagery/reviews/03LMEamSJfAavMLXIQbRZwT-1.fit_lim.size_1050x591.v1593021884.jpg');
+
+
+  height: 100%; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+    position: relative;
+    opacity: 0.6;
+}
+
+.parallax2{
+     background-image: url('https://media.istockphoto.com/photos/headphones-on-black-background-picture-id172437066?k=20&m=172437066&s=170667a&w=0&h=bpe6Z5br_p3B_p1GZuo6MTVFOHXPzmbfaCOetNoXvMI=');
+
+
+  height: 100%; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+    position: relative;
+    opacity: 0.6;
+}
+
+.parallax3{
+     background-image: url('https://wallpaperaccess.com/full/5504495.jpg');
+
+
+  height: 100%; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+    position: relative;
+    opacity: 0.6;
+}
+.text{
+   background-color: var(--black-color);
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.title{
+    color: whitesmoke;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.title span{
+    color: whitesmoke;
+    font-family: serif;
+    font-size:50px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+}
+.first{
+    text-align:center;
+    color: whitesmoke;
+    font-family: var(--body-font);
+    text-transform: uppercase;
+}
+
+.text p{
+    color: gray;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 500px) {
+  .vertical1 h2{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
